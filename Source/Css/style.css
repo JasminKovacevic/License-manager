@@ -1,0 +1,236 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, #bc1b1b, #b12322, #a52929, #992e2e, #8d3232, #8d3232, #8d3232, #8d3232, #992e2e, #a52929, #b12322, #bc1b1b);
+}
+/* LOGIN */
+#wrapper #flexWrapper {
+  width: 50%;
+  margin: 5% auto;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 10px 0px 16px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 0px 16px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 0px 16px 0px rgba(0,0,0,0.75);
+}
+#wrapper #flexWrapper #headerWrapper header#header #logoWrapper {
+  text-align: center;
+  padding: 1px;
+  font-size: 1.5em;
+  background-color: #000;
+  color: goldenrod;
+}
+#wrapper #flexWrapper #mainWrapper {
+  background-color: #fff;
+}
+#wrapper #flexWrapper #mainWrapper main#main #formWrapper {
+  padding: 50px 10px;
+}
+#wrapper #flexWrapper #mainWrapper main#main #formWrapper form label {
+  display: block;
+  margin: 20px 0;
+  font-family: 'Roboto';
+  font-size: 1.2em;
+}
+#wrapper #flexWrapper #mainWrapper main#main #formWrapper form span.value, span#error {
+  font-size: 1.2em;
+}
+#wrapper span#error {
+  text-align: center;
+  display: block;
+  background-color: rgba(255, 0, 0, 0.7);
+  width: 100%;
+}
+#wrapper #flexWrapper #mainWrapper main#main #formWrapper form input[type=text],input[type=password] {
+  width: 100%;
+  padding: 10px 0px;
+  border:none;
+  border-bottom: 1px solid black;
+  text-indent: 10px;
+} 
+#wrapper #flexWrapper #mainWrapper main#main #formWrapper form input[type=text]:focus, input[type=password]:focus {
+  outline: none;
+  background-color: transparent;
+}
+#wrapper #flexWrapper #mainWrapper main#main #formWrapper form button[type=submit]{
+  width: 100%;
+  border:none;
+  background-color: #000;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-top: 50px;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 1em;
+}
+#wrapper #flexWrapper #mainWrapper main#main #formWrapper form button[type=submit]:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#passwordWrapper{
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+#passwordWrapper i{
+  position: absolute;
+  right: 1%;
+  top: 30%;
+  transition: 250ms ease-in-out;
+}
+#passwordWrapper i:hover {
+  cursor: pointer;
+}
+/*Media queries*/
+@media screen and (max-width:768px){
+  #wrapper #flexWrapper {
+    font-size: 0.7em;
+    width: 80%;
+  }
+}
+@media screen and (max-width:425px){
+  #wrapper #flexWrapper {
+    font-size: 0.6em;
+    width: 90%;
+  }
+}
+/* END LOGIN */
+/* LICENSE TABLES, INSERT FORMS, UPDATE FORMS */
+#wrapper #main_wrapper{
+  padding: 2% 1%;
+  border-radius: 5px;
+  background-color: rgb(43, 38, 38);
+  width: 50%;
+  margin: 5% auto;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#wrapper #main_wrapper main a {
+  text-decoration: none;
+  color: #fff;
+  background-color:rgb(63, 66, 68);
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  padding: 1% 0;
+  margin: 1% 0;
+  border-radius: 5px;
+  transition: color 250ms ease-in-out;
+}
+#wrapper #main_wrapper main #result {
+  text-align: center;
+  color: #ccc;
+  padding: 10% 0;
+}
+#wrapper #main_wrapper main a:hover {
+  color: #ccc;
+}
+#wrapper #main_wrapper main #search_form_wrapper {
+  margin: 1% 0;
+  text-align: center;
+}
+#wrapper #main_wrapper main #search_form_wrapper form input[type=text], select, button[type=submit]{
+  padding: 1%;
+  margin: 1% 0;
+  border: none;
+  display: inline;
+}
+#wrapper #main_wrapper main #search_form_wrapper form button[type=submit] {
+  background-color: rgb(63, 74, 83);
+  color: #ccc;
+  border-radius: 5px;
+}
+#wrapper #main_wrapper main #search_form_wrapper form button[type=submit]:hover {
+  cursor: pointer;
+}
+#wrapper #main_wrapper main #table_wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#wrapper #main_wrapper main #table_wrapper table caption {
+  padding: 2% 0;
+  background-color: rgb(87, 36, 36);
+  color:#fff;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#wrapper #main_wrapper main #table_wrapper table thead {
+  background-color: rgb(90, 54, 54);
+  text-align: left;
+  color: #ccc;
+}
+#wrapper #main_wrapper main #table_wrapper table thead tr th {
+  padding: 2% 3%; 
+}
+#wrapper #main_wrapper main #table_wrapper table tbody tr {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+#wrapper #main_wrapper main #table_wrapper table tbody tr td {
+  padding: 1.5% 3%;
+}
+#wrapper #main_wrapper main #table_wrapper table tbody tr td a{
+  display: block;
+  background-color: #f2f2f2;
+  color: #000;
+}
+#wrapper #header_wrapper {
+  margin-bottom: 1%;
+}
+#wrapper #header_wrapper #navigation_header #nav_wrapper nav ul {
+  list-style-type: none;
+}
+#wrapper #header_wrapper #navigation_header #nav_wrapper nav li {
+  display: inline;
+  padding: 0.7% 0;
+}
+#wrapper #header_wrapper #navigation_header #nav_wrapper nav li a {
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 0.7%;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: color 250ms ease-in-out;
+}
+/*Media queries*/
+@media screen and (max-width:768px){
+  #wrapper #main_wrapper {
+    width: 70%;
+  }
+}
+@media screen and (max-width:425px){
+  #wrapper #main_wrapper {
+    width: 85%;
+  }
+}
+#wrapper #main_wrapper main #insert_form_wrapper {
+  padding:2% 1%;
+}
+#wrapper #main_wrapper main #insert_form_wrapper input[type=text], #wrapper #main_wrapper main #insert_form_wrapper input[type=number], #wrapper #main_wrapper main #insert_form_wrapper select, #wrapper #main_wrapper main #insert_form_wrapper label{
+  display: block;
+  width: 80%;
+  margin: 1% auto;
+  padding: 1% 0;
+} 
+#wrapper #main_wrapper main #insert_form_wrapper input[type=number] {
+  color: #000;
+}
+#wrapper #main_wrapper main #insert_form_wrapper label {
+  color: #ccc;
+}
+#wrapper #main_wrapper main #insert_form_wrapper button[type=submit]{
+  width: 50%;
+  display: block;
+  margin: 5% auto 0 auto;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(87, 36, 36);
+  color: #ccc;
+}
+#wrapper #main_wrapper main #insert_form_wrapper button[type=submit]:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
